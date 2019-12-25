@@ -6,7 +6,9 @@ package com.seven.one;
 *
 * */
 public class Solution {
-    public static int removeDuplicates(int nums[]){
+    public static int removeDuplicates(int[] nums){
+        if(nums.length==0) return 0;
+        if(nums.length==1) return 1;
         int target=1;
         for (int i = 0; i <nums.length-1 ; i++) {
             if(nums[i+1]!=nums[i]){
